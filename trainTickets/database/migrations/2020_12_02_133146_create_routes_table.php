@@ -15,7 +15,13 @@ class CreateRoutesTable extends Migration
     {
         Schema::create('routes', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('train_id');
+            $table->integer('from');
+            $table->integer('to');
+            $table->dateTimeTz('time_leave');
+            $table->dateTimeTz('time_travelled');
+
+//            $table->foreign('train_id')->references('id')->on('trains');
         });
     }
 

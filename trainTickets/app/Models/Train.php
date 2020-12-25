@@ -5,12 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Trains extends Model
+class Train extends Model
 {
     public $timestamps = false;
     use HasFactory;
 
+    protected $guarded = [];
+
+//    protected $fillable = [
+//        'name',
+//        'number',
+//
+//    ];
+
     public function routes(){
-        return $this->belongsToMany(Routes::class);
+        return $this->belongsToMany(Route::class);
     }
 }

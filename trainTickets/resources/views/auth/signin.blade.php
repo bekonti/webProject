@@ -14,13 +14,20 @@
 {{--    @endif--}}
     <div class="row">
         <div class="col-6 offset-3">
-            <form action="{{route('signup')}}" method="post" novalidate>
+            @if(session('email_or_pass_error'))
+                <div class="alert alert-danger" role="alert">
+                    {{ session('email_or_pass_error') }}
+                </div>
+            @endif
+
+
+            <form action="{{route('signin')}}" method="post" novalidate>
                 @csrf
                 <div class="form-group">
-                    <label for="email">Email адерес</label>
+                    <label for="email">Email</label>
                     <input type="email" name="email"
                            class="form-control{{$errors->has('email') ? ' is-invalid' : ''}}"
-                           id="email" placeholder="Введите email"
+                           id="email" placeholder="insert email"
                            value="{{ old('email') }}">
                     @if($errors->has('email'))
                         <small class="help-block text-danger">
@@ -29,68 +36,22 @@
                     @endif
                 </div>
                 <div class="form-group">
-                    <label for="password">Пароль</label>
+                    <label for="password">Password</label>
                     <input type="password" name="password"
                            class="form-control{{$errors->has('password') ? ' is-invalid' : ''}}"
-                           id="password" placeholder="Введите пароль">
+                           id="password" placeholder="insert password">
                     @if($errors->has('password'))
                         <small class="help-block text-danger">
                             {{ $errors->first('password') }}
                         </small>
                     @endif
                 </div>
-                <div class="form-group">
-                    <label for="password_confirmation">Повторите пароль</label>
-                    <input type="password" name="password_confirmation"
-                           class="form-control{{$errors->has('password_confirmation') ? ' is-invalid' : ''}}"
-                           id="password_confirmation" placeholder="Подтвердите пароль">
-                    @if($errors->has('password_confirmation'))
-                        <small class="help-block text-danger">
-                            {{ $errors->first('password_confirmation') }}
-                        </small>
-                    @endif
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox" name="remember_me">
+                    <label class="form-check-label" for="checkbox">Remember me</label>
+                    <label class="float-right">not signed up? <a href="{{route('signup')}}" class="btn btn-outline-warning">Sign UP</a></label>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="name">Имя</label>
-                        <input type="text" name="name"
-                               class="form-control{{$errors->has('name') ? ' is-invalid' : ''}}"
-                               id="name" placeholder="Имя"
-                               value="{{ old('name') }}">
-                        @if($errors->has('name'))
-                            <small class="help-block text-danger">
-                                {{ $errors->first('name') }}
-                            </small>
-                        @endif
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="surname">Фамилия</label>
-                        <input type="text" name="surname"
-                               class="form-control{{$errors->has('surname') ? ' is-invalid' : ''}}"
-                               id="surname" placeholder="Фамилия"
-                               value="{{ old('surname') }}">
-                        @if($errors->has('surname'))
-                            <small class="help-block text-danger">
-                                {{ $errors->first('surname') }}
-                            </small>
-                        @endif
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="date">Дата рождения</label>
-                        <input type="date" name="date"
-                               class="pr-4 form-control{{$errors->has('date') ? ' is-invalid' : ''}}"
-                               id="date"
-                               value="{{ old('date') }}">
-                        @if($errors->has('date'))
-                            <small class="help-block text-danger">
-                                {{ $errors->first('date') }}
-                            </small>
-                        @endif
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-success w-100 m-0">Регистрация</button>
-
+                <button type="submit" class="btn btn-warning w-100 m-0">Войти</button>
             </form>
         </div>
 

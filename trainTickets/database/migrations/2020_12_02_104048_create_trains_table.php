@@ -15,9 +15,8 @@ class CreateTrainsTable extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-//            $table->timestamps('');
             $table->string('name');
-            $table->integer('number');
+            $table->integer('number')->unique();
             $table->integer('places');
         });
     }

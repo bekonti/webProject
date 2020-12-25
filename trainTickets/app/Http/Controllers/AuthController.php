@@ -10,8 +10,6 @@ class AuthController extends Controller
 {
     public function getSignup()
     {
-
-
         return view('auth.signup');
     }
 
@@ -26,14 +24,6 @@ class AuthController extends Controller
             'date' => 'required|date'
         ]);
 
-
-//        $usr = new User();
-//        $usr->email = $request->input('email@ff.com');
-//        $usr->name = $request->input('name');
-//        $usr->surname = $request->input('surname');
-//        $usr->password = bcrypt($request->input('password'));
-//        $usr->birth_date = $request->input('date');
-//        $usr->save();
         User::create([
             'email' => $request->input('email'),
             'password' => bcrypt($request->input('password')),
@@ -43,7 +33,36 @@ class AuthController extends Controller
         ]);
 
         return redirect()
-            ->route('home')
-            ->with('info', 'Welcome to the BookShok.kz dear ' . $request->input('name'));
+            ->route('signin')
+            ->with('info', 'Welcome to the TrainTicket.kz dear ' . $request->input('name'));
     }
+
+    public function getSignin()
+    {
+        return view('auth.signin');
+    }
+
+    public function postSignin(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email',
+            'password' => 'required|min:8',
+        ]);
+
+        if (!Auth::attempt($request->only(['email', 'password']), $request->has('remember_me'))) {
+            return redirect()->back()->with('email_or_pass_error', 'Неправильный логин или пароль');
+        }
+
+        return redirect()->route('base')->with('email_or_pass_success', 'Успешно');
+
+    }
+
+    public function getSignout()
+    {
+        Auth::logout();
+
+        return redirect()->route('signin');
+    }
+
+
 }

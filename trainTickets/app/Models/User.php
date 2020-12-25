@@ -44,7 +44,32 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
     /**
      * @var mixed
      */
+
+
+    public function getName(){
+        if($this->name && $this->surname){
+            return "{$this->name} {$this->surname}";
+        }
+        if($this->surname){
+            return "{$this->surname}";
+        }
+
+        return null;
+    }
+
+    public function getEmail(){
+        return $this->email;
+    }
+
+    public function getNameOrLogin(){
+        return $this->getName() ?: $this->email;
+    }
+
+    public function isChild(){
+        return $this->birth_date;
+    }
 }

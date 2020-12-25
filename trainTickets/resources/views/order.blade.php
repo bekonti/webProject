@@ -25,25 +25,31 @@
     </div>
     <hr style="margin-top: 0px;">
     <div class="container">
-        <div class="mt-5 text-dark monospace">
+        <div class="mt-5 monospace">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <p class="h3">
-                @if(\Illuminate\Support\Facades\Auth::check())
-                    <h1>
-                        Authorized
-                    </h1>
-                @else
-                    <h1>
-                        Unauthorized
-                    </h1>
-                @endif
+                {{--                @if(\Illuminate\Support\Facades\Auth::check())--}}
+                {{--                    <h1>--}}
+                {{--                        Authorized--}}
+                {{--                    </h1>--}}
+                {{--                @else--}}
+                {{--                    <h1>--}}
+                {{--                        Unauthorized--}}
+                {{--                    </h1>--}}
+                {{--                @endif--}}
+{{--                @if(session($routes))--}}
+{{--                    <h4>session</h4>--}}
+{{--                @endif--}}
+{{--                @if($routes)--}}
+{{--                    <h3>ROutes</h3>--}}
+{{--                    <h5>{{$routes}}</h5>--}}
+{{--                @endif--}}
 
-                @foreach($users as $user)
-                    <h3>
-                        {{$user->name}}
-                    </h3>
-                @endforeach
-
+{{--                @foreach($routes as $r)--}}
+{{--                    <h3>--}}
+{{--                        {{$r->train_id}}--}}
+{{--                    </h3>--}}
+{{--                @endforeach--}}
                 <strong>SHYMKENT</strong> (SHY) to <strong>ALMATY</strong> (ALA)
                 </p>
                 <p>for <strong>1 adult</strong></p>
@@ -54,13 +60,13 @@
     <hr>
     <div style="background-color: #f5f5f5;">
 
-        <div class="container">
+        <div class="container text-dark">
             <div class="row">
                 <div class="col-md-6">
                     <h5 class="mt-4">When you’re going out</h5>
 
                     <div class="col alert-secondary text-muted rounded text-right mt-4">
-                        Tuesday 20th October 2020
+                        Friday 11th December 2020
                     </div>
 
                     <div class="row rounded bg-white mt-4">
@@ -72,11 +78,11 @@
                         </div>
 
                         <div class="col-md-6">
-                            <img src="src/img/line.png" alt="" style="width: 100%">
+                            <img src="../../public/src/img/line.png" alt="" style="width: 100%">
                             <p>8 hours</p>
                         </div>
                         <div>
-                            <p>05:02<br> SHY</p>
+                            <p>05:02<br> ALA</p>
                         </div>
                         <div>
                             <p class="ml-2">$35.60 <br> Single</p>
@@ -93,11 +99,11 @@
                         </div>
 
                         <div class="col-md-6">
-                            <img src="src/img/line.png" alt="" style="width: 100%">
+                            <img src="../../public/src/img/line.png" alt="" style="width: 100%">
                             <p>11 hours</p>
                         </div>
                         <div>
-                            <p>07:35<br> SHY</p>
+                            <p>07:35<br> ALA</p>
                         </div>
                         <div>
                             <p class="ml-2">$30.40 <br> Single</p>
@@ -105,7 +111,7 @@
                     </div>
 
 
-                    <div class="row rounded bg-white mt-4">
+                    <div class="row rounded bg-white text-dark mt-4">
                         <div>
                             <input type="radio" name="choose" value="ok" class="m-4">
                         </div>
@@ -114,11 +120,11 @@
                         </div>
 
                         <div class="col-md-6">
-                            <img src="src/img/line.png" alt="" style="width: 100%">
+                            <img src="../../public/src/img/line.png" alt="" style="width: 100%">
                             <p>16 hours</p>
                         </div>
                         <div>
-                            <p>9:22<br> SHY</p>
+                            <p>9:22<br> ALA</p>
                         </div>
                         <div>
                             <p class="ml-2">$25.50 <br> Single</p>
@@ -155,7 +161,7 @@
         </div>
     </div>
 
-    <div class="footer fixed-bottom bg-white">
+    <div class="footer fixed-bottom bg-white text-dark">
         <div class="container text-right mt-4 mb-4">
             <h3>
                 Total to pay: £35.60

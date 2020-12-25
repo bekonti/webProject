@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0469e1ed-0a48-4889-b10d-9f49fed0f4e6" name="Default Changelist" comment="" />
+    <list default="true" id="0469e1ed-0a48-4889-b10d-9f49fed0f4e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Models/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Models/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Models/Stations.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Models/Station.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Models/Tickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Models/Ticket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Models/Trains.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Models/Train.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/database/migrations/2020_12_02_104048_create_trains_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/database/migrations/2020_12_02_104048_create_trains_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/database/migrations/2020_12_02_133146_create_routes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/database/migrations/2020_12_02_133146_create_routes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/database/migrations/2020_12_02_151828_create_tickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/database/migrations/2020_12_02_151828_create_tickets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/resources/views/auth/signin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/resources/views/auth/signin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/resources/views/auth/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/resources/views/auth/signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/resources/views/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/resources/views/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/resources/views/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/resources/views/order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainTickets/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/trainTickets/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +39,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -128,6 +153,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1l5x1FMwhwSH50vTYNME3nOIrbj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -135,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/trainTickets/resources/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -143,12 +171,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trainTickets/resources/views/auth" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trainTickets/public" />
+      <recent name="$PROJECT_DIR$/trainTickets/resources/views/src/ico" />
       <recent name="$PROJECT_DIR$/trainTickets/resources/views/layout" />
       <recent name="$PROJECT_DIR$/trainTickets/resources/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trainTickets/resources/views" />
+      <recent name="$PROJECT_DIR$/trainTickets/resources/views/auth" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -162,6 +193,9 @@
       <workItem from="1606900537679" duration="5349000" />
       <workItem from="1606922901933" duration="7948000" />
       <workItem from="1606971748976" duration="570000" />
+      <workItem from="1607107346737" duration="239000" />
+      <workItem from="1607486202668" duration="7736000" />
+      <workItem from="1608808755939" duration="21115000" />
     </task>
     <servers />
   </component>
@@ -169,13 +203,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="103" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606967312319">
+    <state x="103" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608829945794">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="103" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1606967312319" />
+    <state x="103" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1608829945794" />
+    <state x="393" y="131" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608826777441">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="393" y="131" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1608826777441" />
     <state x="141" y="50" key="SettingsEditor" timestamp="1606967540931">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1606967540931" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1608828322292">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1608828322292" />
   </component>
 </project>
